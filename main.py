@@ -12,12 +12,14 @@ def highestcommonfactor(num1, num2):
     originalNum2 = num2
 
     while True:
-        if (num1 - num2) < (num2 - num1):
-            lowerNumber = num1
-        else:
-            lowerNumber = num2
 
-        if lowerNumber == num1:
+        # Finds which number is highest out of the two numbers
+        if (num1 - num2) < (num2 - num1):
+            lowernumber = num1
+        else:
+            lowernumber = num2
+
+        if lowernumber == num1:
             temporary = num1
             num1 = num2
             num2 = temporary
